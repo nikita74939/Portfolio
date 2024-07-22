@@ -336,7 +336,10 @@ body {
 
 .hero .pict {
     flex: 50%;
-    padding: 1rem;
+    padding: 5rem;
+    position: relative;
+    translate: 20px;
+    top: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -366,9 +369,10 @@ body {
 }
 
 .skills h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 1rem 2rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .skills {
@@ -388,7 +392,7 @@ body {
 
 .container {
     width: 90%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: rgb(0, 0, 0);
     position: relative;
     display: flex;
@@ -399,6 +403,7 @@ body {
 }
 
 .skills .content p {
+    font-size: 1.3rem;
     width: 90%;
     margin-bottom: 5px;
     padding-top: 1rem;
@@ -437,11 +442,12 @@ body {
 .fa-fish {
     position: absolute;
     translate: -1px;
-    font-size: 7px;
+    font-size: 9px;
     top: 14px;
 }
 
 .skill .fa-fish-fins {
+    font-size: 12px;
     position: relative;
     translate: 8px;
     transform: rotate(-15deg);
@@ -703,7 +709,7 @@ section.bottom {
 /* Mobile Phone */
 @media (max-width: 450px) {
     html {
-        font-size: 75%;
+        font-size: 55%;
     }
 
     .hero {
