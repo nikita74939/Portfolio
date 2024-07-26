@@ -70,10 +70,10 @@ body {
 .hero {
     margin-top: 2rem;
     font-family: 'Poppins';
-    min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 1.4rem 7%;
+    min-height: 100vh;
 }
 
 .hero .content {
@@ -355,7 +355,6 @@ body {
     opacity: 0.8;
     margin-top: 2rem;
     font-family: 'Poppins';
-    min-height: 100vh;
     padding: 1.4rem 7%;
 }
 
@@ -365,7 +364,7 @@ body {
     border-radius: 20px;
     box-sizing: border-box;
     padding-bottom: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 16rem;
 }
 
 .skills h1 {
@@ -447,6 +446,7 @@ body {
 }
 
 .skill .fa-fish-fins {
+    padding: 5px;
     font-size: 12px;
     position: relative;
     translate: 8px;
@@ -500,18 +500,22 @@ body {
     background-color:#230035;
     opacity: 0.8;
     font-family: 'Poppins';
-    min-height: 100vh;
     padding: 1.4rem 7%;
     padding-top: 2rem;
     display: flexbox;
     justify-content: center;
     align-items: center;
+    min-height: 70vh;
+}
+
+.content-project {
+    margin-bottom: 25rem;
 }
 
 .projects h1 {
     padding-bottom: 2rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .btn {
@@ -535,6 +539,7 @@ ul {
 
 li {
     padding: 1rem;
+    margin: 2rem 0;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -567,12 +572,13 @@ li:hover .btn {
 }
 
 .title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .info p {
-    font-size: 0.8rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
@@ -584,7 +590,7 @@ footer {
 .top h1 {
     height: 50px;
     font-family: 'Playwrite MX';
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #fff;
     font-style: normal;
@@ -684,9 +690,51 @@ section.bottom {
 }
 
 /* Tablet */
-@media (max-width: 758px) {
+@media (max-width: 1024px) {
     html {
-        font-size: 62.5%;
+        font-size: 75%;
+    }
+
+    .hero {
+        margin-top: 5rem;
+        display: flexbox;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .hero .content {
+        position: relative;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        justify-content: normal;
+    }
+
+    .hero .welcome {
+        font-size: 12px;
+        margin-bottom: 3rem;
+    }
+
+    .hero h1 {
+        margin-top: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        padding: 1rem;
+    }
+
+    .hero .content .button{
+        display: none;
+    }
+
+    .hero .pict {
+        padding: 0px;
+        left: -35px;
+    }
+
+    .hero .pict {
+        padding: 2rem;
     }
 
     .fa-solid {
@@ -703,6 +751,27 @@ section.bottom {
 
     .container {
         width: 100%;
+    }
+
+    .resources-column {
+        translate: -25%;
+    }
+    
+    .social-column {
+        translate: -50%;
+    }
+
+    footer section.top h2 {
+        font-size: 14px;
+    }
+    
+    
+    section.top p {
+        font-size: 12px;
+    }
+
+    section.bottom {
+        font-size: 12px;
     }
 }
 
@@ -737,15 +806,69 @@ section.bottom {
         font-size: 2.5rem;
     }
 
+    .hero p {
+        padding: 1rem;
+    }
+
     .hero .content .button{
         display: none;
     }
 
     .hero .pict {
-        padding: 0 5rem 0 2rem;
+        padding: 0px;
+        left: -35px;
     }
 
     .navbar-extra {
         display: none;
+    }
+
+    .top h1 {
+        text-align: center;
+    }
+
+    footer section.top .links {
+        font-family: 'Poppins';
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 25px;
+    }
+    
+    footer section.top .links-column {
+        display: grid;
+        text-align: center;
+    }
+    
+    .resources-column {
+        translate: 0;
+    }
+    
+    .social-column {
+        position: relative;
+        translate: 50%;
+        margin-top: 4rem;
+        justify-content: center;
+    }
+
+    .social-column p {
+        display: none;
+    }
+
+    .social-column h2 {
+        display: none;
+    }
+
+    footer section.top h2 {
+        font-size: 12px;
+    }
+    
+    
+    section.top p {
+        font-size: 10px;
+    }
+
+    section.bottom {
+        text-align: center;
+        font-size: 10px;
     }
 }
